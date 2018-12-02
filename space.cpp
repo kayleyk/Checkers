@@ -28,4 +28,10 @@ class space {
     bool getIsValid() {
         return isValid;
     }
+    void setKing(bool isAKing) {
+        this->isAKing = isAKing;
+    }
+    bool getKing() {
+        return this->isAKing;
+    }
 };
