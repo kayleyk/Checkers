@@ -1,13 +1,13 @@
 class space {
-    // checker of type piece. for each square.
     bool isAKing, isValid;
     user *owner;
     std::string name;
     public:
+    // set owner of space
     space(user *owner) {
         this->owner = owner;
-        // every other row from 0
     }
+    // get piece in this space
     char getPiece() {
         if (!owner)
         return ' ';
@@ -21,12 +21,6 @@ class space {
     }
     void setOwner(user *owner) {
         this->owner = owner;
-    }
-    void setIsValid(bool isValid) { 
-        this->isValid = isValid;
-    }
-    bool getIsValid() {
-        return isValid;
     }
     void setKing(bool isAKing) {
         this->isAKing = isAKing;
